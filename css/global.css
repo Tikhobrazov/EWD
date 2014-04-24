@@ -52,6 +52,11 @@ body {
 	color: #275787;
 }
 
+.gr {
+	font-size: 14pt;
+	color: #17568b;
+}
+
 .more {
 	font-size: 80%;
 }
@@ -127,10 +132,25 @@ div#content {
 	vertical-align: middle;
 }
 
+.light {
+	background-color: #d0e9f1;
+	color: #17558b;
+}
+
+.info {
+	padding: 10px 10px 10px 45px;
+	border: 1px solid #b5cee0;
+	background: url(../img/info.png) no-repeat 10px 10px #ffffd5;
+	min-height: 25px;
+	margin: 10px 0 10px 0;
+}
+
 .message {
 	padding: 10px;
-	background-color: #ffffd5;
 	border: 1px solid #b5cee0;
+	background-color: #ffffd5;
+	min-height: 25px;
+	margin: 10px 0 10px 0;
 }
 
 #footer {
@@ -173,9 +193,72 @@ div.outer-block {
 	border: 1px solid #9ec4e2;
 }
 
+div.outer-block-2 {
+	padding: 0 20px 0 20px;
+	border: 1px solid #accfd6;
+}
+
+.separate {
+	margin-top: 20px;
+}
+
+div.outer-block-2 a{
+	color: black;
+}
+
 div.block {
 	margin: 13px 0 13px 0;
 	background-color: #edf3f8;
-	padding: 0 15px 0 15px;
+	padding: 12px 15px 10px 15px;
 	border: 1px solid #b4cde0;
+}
+
+div.file {
+	padding: 10px 10px 10px 60px;
+	min-height: 45px;
+	font-size: 14px;
+}
+
+div.doc {
+	background: url(../img/doc.png) no-repeat 10px 10px;
+}
+
+div.psd {
+	background: url(../img/psd.png) no-repeat 16px 10px;
+}
+
+div.pdf {
+	background: url(../img/pdf.png) no-repeat 10px 10px;
+}
+
+.pseudo-link {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.edit {
+	display: block;
+	color: #b90000;
+	text-align: right;
+}
+
+span.size {
+	color: #0080ee;
+}
+
+span.file-type {
+	color: #999999;
+}
+
+span.remove {
+	margin-left: 20px;
+	background: url(../img/remove.png) no-repeat 2px;
+	padding-left: 18px;
+	color: #3579b3;
+}
+
+.add_file {
+	background: url(../img/add.png) no-repeat 2px;
+	padding-left: 30px;
+	color: #3579b3;
 }

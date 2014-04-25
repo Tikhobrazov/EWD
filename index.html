@@ -29,7 +29,7 @@
 				<li class="helper"></li>
 			</ul>
 			<div id="content">
-				<table>
+				<table class="general_info">
 					<tr>
 						<td><strong>Выбрана услуга:</strong> Создание сайта</td>
 						<td><strong>Тип сайта:</strong> Информационно-новостной портал</td>
@@ -227,10 +227,20 @@
 								</div>
 							</td>
 							<td width="50%" valign="top">
-								<strong>Прикрепить файлы</strong><br/>
-								<input type="text" /><input type="button" value="Выберите" /><input type="button" value="Удалить" /><br/>
+								<strong>Прикрепить файлы</strong><br/><br/>
+								<table>
+									<tr>
+										<td valign="bottom">
+											<input type="text" />
+										</td>
+										<td valign="bottom">
+											<input type="button" value="Выберите" class="blue"/>
+											<input type="button" value="Удалить" class="blue"/>
+										</td>
+									</tr>
+								</table>
 								<p class="pseudo-link add_file">Добавить файл</p>
-								<p>Размер одного файла не должен превышать 50 МБ.</p>
+								<p class="text">Размер одного файла не должен превышать 50 МБ.</p>
 							</td>
 						</tr>
 					</table>
@@ -238,16 +248,52 @@
 
 				<div class="headline">Дизайн</div>
 				<div class="outer-block">
-					<strong>Комментарии к дизайну</strong>
-					<div class="block">
-						<span>Вы можете деактивировать любую базовую опцию убрав выборку на чекбоксе. Данная опция будет интегрирована в вашу базовую систему управления сайтом, нобудет находится в статусе "Неактивна". В последующем вы сможете в любое время ее активировать при необходимости.</span><br/><br/>
-						<span>Вы можете деактивировать любую базовую опцию убрав выборку на чекбоксе. Данная опция будет интегрирована в вашу базовую систему управления сайтом, нобудет находится в статусе "Неактивна". В последующем вы сможете в любое время ее активировать при необходимости.</span><br/>
-						<span class="pseudo-link edit">редактировать</span>
-					</div>
 					<table width="100%">
 						<tr>
-							<td width="50%"><strong>Файлы дизайна</strong></td>
-							<td width="50%"><strong>Прикрепить файлы</strong></td>
+							<td>
+								
+							</td>
+							<td width="847px">
+								<strong>Комментарии к дизайну</strong>
+								<div class="block">
+									<span>Вы можете деактивировать любую базовую опцию убрав выборку на чекбоксе. Данная опция будет интегрирована в вашу базовую систему управления сайтом, нобудет находится в статусе "Неактивна". В последующем вы сможете в любое время ее активировать при необходимости.</span><br/><br/>
+									<span>Вы можете деактивировать любую базовую опцию убрав выборку на чекбоксе. Данная опция будет интегрирована в вашу базовую систему управления сайтом, нобудет находится в статусе "Неактивна". В последующем вы сможете в любое время ее активировать при необходимости.</span><br/>
+									<span class="pseudo-link edit">редактировать</span>
+								</div>
+								<table width="100%">
+									<tr>
+										<td width="50%" valign="top">
+											<strong>Файлы дизайна</strong>
+											<div class="file psd">
+												Исходники основного шаблона сайта версия 1<br/>
+												<span class="pseudo-link">Скачать</span> <span class="size">(121.8 КБ)</span> <span class="pseudo-link remove">Удалить</span><br/>
+												<span class="file-type">PSD</span>
+											</div>
+											<div class="file png">
+												Исходники основного шаблона сайта версия 1<br/>
+												<span class="pseudo-link">Скачать</span> <span class="size">(121.8 КБ)</span> <span class="pseudo-link remove">Удалить</span><br/>
+												<span class="file-type">PNG</span>
+											</div>
+										</td>
+										<td width="50%" valign="top">
+											<strong>Прикрепить файлы</strong><br/><br/>
+											<table>
+												<tr>
+													<td valign="bottom">
+														<input type="text" />
+													</td>
+													<td valign="bottom">
+														<input type="button" value="Выберите" class="blue"/>
+														<input type="button" value="Удалить" class="blue"/>
+													</td>
+												</tr>
+											</table>
+											<p class="pseudo-link add_file">Добавить файл</p>
+											<p class="text">Размер одного файла не должен превышать 50 МБ.</p>
+										</td>
+									</tr>
+								</table>
+							</td>
 						</tr>
 					</table>
 				</div>
@@ -275,26 +321,53 @@
 									<span class="file-type">DOC</span>
 								</div>
 							</td>
-							<td width="50%" valign="top"><strong>Прикрепить файлы</strong></td>
+							<td width="50%" valign="top">
+								<strong>Прикрепить файлы</strong><br/><br/>
+								<table>
+									<tr>
+										<td valign="bottom">
+											<input type="text" />
+										</td>
+										<td valign="bottom">
+											<input type="button" value="Выберите" class="blue"/>
+											<input type="button" value="Удалить" class="blue"/>
+										</td>
+									</tr>
+								</table>
+								<p class="pseudo-link add_file">Добавить файл</p>
+								<p class="text">Размер одного файла не должен превышать 50 МБ.</p>
+							</td>
 						</tr>
 					</table>
 				</div>
 
 				<div class="headline light">Сообщения</div>
 				<div class="outer-block-2">
-					<p><strong>14.09.2015 <a href="#">Необходимы дополнительные документы для предоставления услуги</a></strong></p>
-					<p>14.09.2015 <a href="#">Согласование сроков предоставления услуги</a></p>
-					<p>14.09.2015 <a href="#">Запрос на добавление информации  относительно времени проведения мероприятия</a></p>
-					<p>14.09.2015 <a href="#">Необходимы дополнительные документы для предоставления услуги</a></p>
-					<p>14.09.2015 <a href="#">Необходимы дополнительные документы для предоставления услуги</a></p>
-					<p>14.09.2015 <a href="#">Необходимы дополнительные документы для предоставления услуги</a></p>
-					<p>20.09.2015 <a href="#">Необходимы дополнительные документы для предоставления услуги</a></p>
+					<p class="inbox"><strong>14.09.2015 <a href="#">Необходимы дополнительные документы для предоставления услуги</a></strong><span class="attach"></span></p>
+					<p class="inbox">14.09.2015 <a href="#">Согласование сроков предоставления услуги</a></p>
+					<p class="send_mail">14.09.2015 <a href="#">Запрос на добавление информации  относительно времени проведения мероприятия</a></p>
+					<p class="send_mail">14.09.2015 <a href="#">Необходимы дополнительные документы для предоставления услуги</a><span class="attach"></span></p>
+					<p class="send_mail">14.09.2015 <a href="#">Необходимы дополнительные документы для предоставления услуги</a><span class="attach"></span></p>
+					<p class="inbox">14.09.2015 <a href="#">Необходимы дополнительные документы для предоставления услуги</a></p>
+					<p class="send_mail">20.09.2015 <a href="#">Необходимы дополнительные документы для предоставления услуги</a><span class="attach"></span></p>
 				</div>
 
 				<div class="outer-block-2 separate">
 					<p><strong>14.09.2015 <a href="#">Необходимы дополнительные документы для предоставления услуги</a></strong></p>
 					<p>Здравствуйте, Николай.<br/>Направляю вам наши документы по услуге и надеемся на скорый ответ при необходимости дошлем необходимые сканы и документы. Об изменениях просьба сообщать мне при первой же возможности.</p>
 					<p>С уважением, Митюков А. М.</p>
+					<table>
+						<tr>
+							<td valign="middle"><strong>Вложения</strong></div></td>
+							<td>
+								<div class="file xls">
+									Форма заявки на включение<br/>
+									<span class="pseudo-link">Скачать</span> <span class="size">(121.5 КБ)</span> <span class="pseudo-link remove">Удалить</span><br/>
+									<span class="file-type">XLS</span>
+								</div>
+							</td>
+						</tr>
+					</table>
 				</div>
 
 				<div class="info">
@@ -305,16 +378,28 @@
 					<label for="box_3" class="css-label">Получать уведомления на e-mail о новых сообщениях</label><br />
 				</div>
 
-				<div class="message">
-					<span class="gr">Стоимость выбранных опций</span><br/>
-					<p>
-						Установка WordPress + Базовый набор плагинов - 3000 руб<br/>
-						Установка плагина Akisment - 120 руб<br/>
-						Установка плагина WpTube - 120 руб<br/>
-						Стоимость шаблона "Greek 1238-09" - 3000 руб
-					</p>
-					<span class="gr">Итого: стоимость выбранных опций - 7300 руб</span>
-				</div>
+				<table width="100%">
+					<tr>
+						<td width="755px" valign="top">
+							<div class="message">
+								<span class="gr">Стоимость выбранных опций</span><br/>
+								<p class="options_price">
+									Установка WordPress + Базовый набор плагинов - 3000 руб<br/>
+									Установка плагина Akisment - 120 руб<br/>
+									Установка плагина WpTube - 120 руб<br/>
+									Стоимость шаблона "Greek 1238-09" - 3000 руб
+								</p>
+								<span class="gr">Итого: стоимость выбранных опций - 7300 руб</span>
+							</div>
+						</td>
+						<td valign="bottom">
+							<div class="send_order">
+								<p>Отправить заказ администратору для полного формирования стоимости заказа</p>
+								<input type="button" value="Отправить заказ" class="green big">
+							</div>
+						</td>
+					</tr>
+				</table>
 
 			</div>
 		</div>

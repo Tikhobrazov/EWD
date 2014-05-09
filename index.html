@@ -3,6 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" href="css/global.css" />
+		<script src="js/jquery.js"></script>
 		<script src="js/main.js"></script>
 		<title>EWD</title>
 	</head>
@@ -15,7 +16,8 @@
 					<div class="user-info">
 						<span class="author">МИТЮКОВ АЛЕКСАНДР МИХАИЛОВИЧ</span><br/>
 						<span>Зарегистрирован с 12.09.2014</span><br/>
-						<span>Личный счет доступно: 2100 руб</span><br/>
+						<span>Личный счет доступно: 2100 руб</span>
+						<input type="button" value="Выйти" class="blue log_out"/>
 					</div>
 				</div>
 			</div>
@@ -200,7 +202,7 @@
 					</tr>
 				</table>
 				<div class="info"><strong>При выборе опции</strong> Другое (Я не знаю какие опции необходимы для оптимальной работы. Полагаюсь на ваш выбор). Наши специалисты сами проанализируют задачи в рамках проекта и установят все необходимые опции для вашего сайта.</div>
-				<p>Опишите необходимые вам модули, плагины, расширения, дополнительные опции.</p>
+				<p><strong>Опишите необходимые вам модули, плагины, расширения, дополнительные опции.</strong></p>
 				<textarea class="options"></textarea>
 
 				<div class="headline">Структура сайта</div>
@@ -228,17 +230,14 @@
 							</td>
 							<td width="50%" valign="top">
 								<strong>Прикрепить файлы</strong><br/><br/>
-								<table>
-									<tr>
-										<td valign="bottom">
-											<input type="text" />
-										</td>
-										<td valign="bottom">
-											<input type="button" value="Выберите" class="blue"/>
-											<input type="button" value="Удалить" class="blue"/>
-										</td>
-									</tr>
-								</table>
+								
+								<div class="file_upload inline">
+							        <button type="button">Выберите</button>
+							        <div class="file_name">Файл не выбран</div>
+							        <input type="file" />
+							    </div>
+							    <input type="button" value="Удалить" class="blue inline clear_file" />
+
 								<p class="pseudo-link add_file">Добавить файл</p>
 								<p class="text">Размер одного файла не должен превышать 50 МБ.</p>
 							</td>
@@ -250,10 +249,18 @@
 				<div class="outer-block">
 					<table width="100%">
 						<tr>
-							<td>
-								
+							<td valign="top">
+								<img alt="design" src="img/design.png" />
+								<div class="template-menu"><a href="#">Описание</a> | <a href="#">Демо</a> | <a href="#">Купить</a></div>
+								<div class="template-info">
+									Тип: <strong>WordPress шаблоны</strong><br />
+									Номер: #48160<br />
+									Автор: <a href="">Sawyer</a><br />
+									Загрузок: 1
+								</div>
+								<div class="template-other">Выбрать другой шаблон</div>
 							</td>
-							<td width="847px">
+							<td width="835px">
 								<strong>Комментарии к дизайну</strong>
 								<div class="block">
 									<span>Вы можете деактивировать любую базовую опцию убрав выборку на чекбоксе. Данная опция будет интегрирована в вашу базовую систему управления сайтом, нобудет находится в статусе "Неактивна". В последующем вы сможете в любое время ее активировать при необходимости.</span><br/><br/>
@@ -277,17 +284,14 @@
 										</td>
 										<td width="50%" valign="top">
 											<strong>Прикрепить файлы</strong><br/><br/>
-											<table>
-												<tr>
-													<td valign="bottom">
-														<input type="text" />
-													</td>
-													<td valign="bottom">
-														<input type="button" value="Выберите" class="blue"/>
-														<input type="button" value="Удалить" class="blue"/>
-													</td>
-												</tr>
-											</table>
+											
+											<div class="file_upload inline">
+										        <button type="button">Выберите</button>
+										        <div class="file_name">Файл не выбран</div>
+										        <input type="file" />
+										    </div>
+										    <input type="button" value="Удалить" class="blue inline clear_file" />
+
 											<p class="pseudo-link add_file">Добавить файл</p>
 											<p class="text">Размер одного файла не должен превышать 50 МБ.</p>
 										</td>
@@ -323,17 +327,14 @@
 							</td>
 							<td width="50%" valign="top">
 								<strong>Прикрепить файлы</strong><br/><br/>
-								<table>
-									<tr>
-										<td valign="bottom">
-											<input type="text" />
-										</td>
-										<td valign="bottom">
-											<input type="button" value="Выберите" class="blue"/>
-											<input type="button" value="Удалить" class="blue"/>
-										</td>
-									</tr>
-								</table>
+								
+								<div class="file_upload inline">
+							        <button type="button">Выберите</button>
+							        <div class="file_name">Файл не выбран</div>
+							        <input type="file" />
+							    </div>
+							    <input type="button" value="Удалить" class="blue inline clear_file" />
+
 								<p class="pseudo-link add_file">Добавить файл</p>
 								<p class="text">Размер одного файла не должен превышать 50 МБ.</p>
 							</td>
@@ -362,12 +363,32 @@
 							<td>
 								<div class="file xls">
 									Форма заявки на включение<br/>
-									<span class="pseudo-link">Скачать</span> <span class="size">(121.5 КБ)</span> <span class="pseudo-link remove">Удалить</span><br/>
+									<span class="pseudo-link">Скачать</span> <span class="size">(121.5 КБ)</span><br/>
 									<span class="file-type">XLS</span>
 								</div>
 							</td>
 						</tr>
 					</table>
+					<h2>Написать сообщение</h2>
+					<div class="new_message inline">
+						<textarea></textarea><br /><br />
+						<input type="button" value="Написать" class="blue big"/>
+					</div>
+					<div class="order_refresh inline">
+						<strong class="gr">Прикрепить файлы</strong><br/><br/>
+						
+						<div class="file_upload inline">
+					        <button type="button">Выберите</button>
+					        <div class="file_name">Файл не выбран</div>
+					        <input type="file" />
+					    </div>
+					    <input type="button" value="Удалить" class="blue inline clear_file" />
+
+						<p class="pseudo-link add_file">Добавить файл</p>
+						<p class="text">Размер одного файла не должен превышать 50 МБ.</p>
+						<input type="button" value="Обновить заказ" class="blue-dark big refresh"/>
+					</div>
+						
 				</div>
 
 				<div class="info">

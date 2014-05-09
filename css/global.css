@@ -4,6 +4,13 @@ body {
 	font: 100% Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
 }
 
+h2 {
+	font-size: 13pt;
+	font-weight: normal;
+	color: #17568b;
+	margin-top: 0px;
+}
+
 input[type=text] {
 	font-size: 11pt;
     height: 30px;
@@ -12,10 +19,11 @@ input[type=text] {
     padding-left: 8px;
 }
 
-input[type=button] {
+input[type=button]{
 	font: 8pt Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
 	color: #ffffff;
-	padding: 6px 17px 10px 17px;
+	margin-top: 0;
+	padding: 8px 17px 8px 17px;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
@@ -32,10 +40,116 @@ input[type=button].blue {
 	border: 1px solid #3880bb;
 }
 
+input[type=button].blue-dark {
+	background: -moz-linear-gradient(top, #367ba8 0%, #2a6185);
+	background: -webkit-gradient(linear, left top, left bottom, from(#367ba8), to(#2a6185));
+	border: 1px solid #2a6185;
+}
+
 input[type=button].green {
 	background: -moz-linear-gradient(top, #54a7a7 0%, #428484);
 	background: -webkit-gradient(linear, left top, left bottom, from(#54a7a7), to(#428484));
 	border: 1px solid #428484;
+}
+
+input[type=button].log_out {
+	padding: 0;
+	min-width: 88px;
+	height: 24px;
+	float: right;
+}
+
+/* input type file custom css */
+.file_upload {
+	width: 290px;
+	height: 28px;
+    position: relative;
+    overflow: hidden;
+    font-size: 1em;
+    line-height: 28px;
+  	border: 1px solid #b4c9de;
+  	background-color: #ffffff;
+  	color: #999999;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: box-shadow 0.1s linear;
+}
+
+.file_upload > div {
+    padding-left: 1em;
+}
+
+.file_upload input[type=file] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(20);
+    letter-spacing: 10em;     /* IE 9 fix */
+    -ms-transform: scale(20); /* IE 9 fix */
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file_upload.focus {
+    box-shadow: 0 0 5px rgba(0,30,255,0.4)
+}
+
+.file_upload > button {
+	color: #ffffff;
+	float: right;
+    width: 8em;
+    height: 100%;
+    transition: background 0.2s;
+    border-radius: 2px;
+    color: #ffffff;
+    text-shadow: #6200bd 0 -1px 0;
+    overflow: hidden;
+    background: -moz-linear-gradient(top, #47a2ce 0%, #3880bb);
+	background: -webkit-gradient(linear, left top, left bottom, from(#47a2ce), to(#3880bb));
+	border: 1px solid #3880bb;
+}
+
+.file_name {
+	font-size: 8pt;
+}
+/* ************************** */
+
+textarea {
+	font-size: 10pt;
+	padding: 13px 16px;
+	border: 1px solid #b4c9de;
+}
+
+textarea.options {
+	height: 150px;
+	width: 1017px;
+}
+
+.inline {
+	margin-bottom: 15px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.new_message {
+	width: 522px;
+	text-align: right;
+	margin-right: 45px;
+}
+
+.new_message textarea{
+	height: 142px;
+	width: 488px;
+}
+
+.order_refresh {
+	width: 435px;
+}
+
+.refresh {
+	float: right;
+	margin-top: 65px;
 }
 
 #wrapper {
@@ -66,7 +180,7 @@ input[type=button].green {
 	padding-left: 10px;
 	vertical-align: top;
 	display: inline-block;
-	font-size: 11pt;
+	font-size: 10pt;
 }
 
 .general_info {
@@ -123,8 +237,7 @@ input[type=button].green {
 	display: inline-block; /* выстраиваем элементы списка в один ряд */
 	background-color: #ddeaf4; /* цвет неактивных пунктнов меню */
 
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 0 20px;
 
 	border-top: 1px;
 	border-left: 1px;
@@ -205,12 +318,6 @@ div#content {
 	font-size: 10pt;
 }
 
-textarea.options {
-	height: 142px;
-	width: 100%;
-	border: 1px solid #b4c9de;
-}
-
 .styled-select {
 	width: 196px;
 	overflow: hidden;
@@ -235,6 +342,7 @@ div.outer-block {
 	font-size: 12pt;
 	background-color: #ffffff;
 	padding: 20px;
+	padding-bottom: 0;
 	border: 1px solid #9ec4e2;
 }
 
@@ -311,6 +419,37 @@ span.remove {
 	background: url(../img/remove.png) no-repeat 2px;
 	padding-left: 18px;
 	color: #3579b3;
+}
+
+.template-menu {
+	font-size: 8pt;
+	color: #ffffff;
+	width: 145px;
+	padding: 8px 0 7px 0;
+	background-color: #3f89c3;
+	text-align: center;
+}
+
+.template-menu a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.template-info {
+	width: 145px;
+	margin-top: 12px;
+	font-size: 8pt;
+}
+
+.template-info a {
+	color: black;
+}
+
+.template-other {
+	font-size: 11pt;
+	width: 145px;
+	margin-top: 20px;
+	text-align: center;
 }
 
 .add_file {

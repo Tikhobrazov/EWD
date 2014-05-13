@@ -185,6 +185,30 @@ textarea.options {
 
 .general_info {
 	font-size: 11pt;
+	line-height: 32px;
+}
+
+.general_info .margin_t {
+	margin-top: 15px;
+	display: block;
+}
+
+.general_info .second {
+	margin-left: 20px;
+}
+
+.general_info .third {
+	float: right;
+	line-height: 12pt;
+}
+
+.trashcan {
+	background: url(../img/trashcan.png) no-repeat 0px 0px;
+	padding-left: 50px;
+	display: inline-block;
+	height: 41px;
+	line-height: 41px;
+	color: #ff0000;
 }
 
 #logo {
@@ -323,13 +347,14 @@ div#content {
 	overflow: hidden;
 	background: url(../img/down_arrow.png) no-repeat 95% #ffffff;
 	border: 1px solid #b4c9de;
+	margin-top: 15px;
 }
 
 .styled-select select {
 	background: transparent;
 	width: 224px;
 	padding: 5px;
-	font-size: 16px;
+	font-size: 10pt;
 	line-height: 1;
 	border: 0;
 	border-radius: 0;
@@ -397,6 +422,19 @@ div.png {
 .pseudo-link {
 	text-decoration: underline;
 	cursor: pointer;
+}
+
+.pseudo-button {
+	font-size: 10pt;
+	border: 1px solid #5eaeae;
+	cursor: pointer;
+	color: #ffffff;
+	background-color: #6cb5b5;
+	height: 24px;
+	width: 157px;
+	display: inline-block;
+	text-align: center;
+	line-height: 24px;
 }
 
 .edit {
